@@ -66,7 +66,7 @@ export class Alumno {
 
     getEdad(): number {
         // TODO
-        throw new Error("Implementar");
+    
         return this.edad;
     }
 
@@ -74,11 +74,11 @@ export class Alumno {
         // TODO: debe impedir edades inválidas.
         // edad < 0   -> throw new Error(...)
         if (edad < 0){
-            throw new Error("La edad no puede ser negativa");
+            console.log("La edad no puede ser negativa");
         }
         else if (edad > 120){
         // edad > 120 -> throw new Error(...)
-        throw new Error("La edad no puede ser mayor a 120");
+            console.log("La edad no puede ser mayor a 120");
     }
     this.edad = edad;
     }
